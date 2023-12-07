@@ -21,7 +21,7 @@ export default function Login() {
           </form>
         </div>
       </div>
-      <div className="hidden md:flex flex-col items-center justify-center h-full py-10 [background:linear-gradient(180deg,rgb(1.31,84.41,105.19)_0%,rgb(41,129,149)_96.88%)]">
+      <div className="hidden md:flex flex-col items-center justify-center h-full py-10 pl-10 [background:linear-gradient(180deg,rgb(1.31,84.41,105.19)_0%,rgb(41,129,149)_96.88%)]">
         <div className="w-3/4">
           <p className="text-[36px] text-white leading-[49px]">Getting Easier
             Pay for Any Transfer<br />
@@ -33,7 +33,7 @@ export default function Login() {
             <Image width={394} height={128} src={'/appstore.png'} alt="mobile" className="w-32" />
           </div>
         </div>
-        <div className="relative bg-[url('/mobile.png')] bg-center bg-no-repeat bg-cover w-full h-full">
+        <div className="relative bg-[url('/mobile.png')] bg-center bg-no-repeat bg-cover w-3/4 h-full">
           {/* <Image width={721} height={627} src={'/mobile.png'} alt="mobile" className="bg-contain" /> */}
           <WhiteButton onClick={()=>console.log("")} textStyle="absolute bottom-0 right-0 bg-white text-[#0B677E] text-[24px]"  spanStyle="text-[#FCBA2D] text-[24px]" text="IBank" span="Care"/>
         </div>
