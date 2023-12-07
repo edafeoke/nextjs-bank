@@ -5,9 +5,8 @@ import PrimaryButton from "../ui/PrimaryButton";
 import Link from "next/link";
 import InfoLine from "../ui/InfoLine";
 import Image from "next/image";
-import { Inter, Poppins } from "next/font/google";
 export default function Login() {
-  
+
   return (
     <div className="w-screen h-screen [background:linear-gradient(180deg,rgb(1.31,84.41,105.19)_0%,rgb(41,129,149)_96.88%)] flex flex-col md:flex-row">
       <div className="flex items-center justify-center bg-white bold w-full h-screen md:w-3/6">
@@ -21,17 +20,21 @@ export default function Login() {
           </form>
         </div>
       </div>
-      <div className="hidden md:flex flex-col  [background:linear-gradient(180deg,rgb(1.31,84.41,105.19)_0%,rgb(41,129,149)_96.88%)]">
-        <p>Getting Easier
-          Pay for Any Transfer
-          <span>with IbankCare</span>
-        </p>
-        <p>Install Ibankcare application right now!</p>
-        <div>
-          <Image width={340} height={232} src={'/googleplay.png'} alt="mobile" className="" />
-          <Image width={394} height={128} src={'/appstore.png'} alt="mobile" className="" />
+      <div className="hidden md:flex flex-col items-center justify-center h-full py-10 [background:linear-gradient(180deg,rgb(1.31,84.41,105.19)_0%,rgb(41,129,149)_96.88%)]">
+        <div className="w-3/4">
+          <p className="text-[36px] text-white leading-[49px]">Getting Easier
+            Pay for Any Transfer<br />
+            <span className="text-[#f8ad15]">with IbankCare</span>
+          </p>
+          <p className="text-[14px] text-white weight-[500] leading-[32px]">Install Ibankcare application right now!</p>
+          <div className="flex">
+            <Image width={340} height={232} src={'/appstore.png'} alt="mobile" className="w-32" />
+            <Image width={394} height={128} src={'/appstore.png'} alt="mobile" className="w-32" />
+          </div>
         </div>
-        <Image width={721} height={627} src={'/mobile.png'} alt="mobile" className="w-full" />
+        <div className="bg-[url('/mobile.png')] bg-center bg-no-repeat bg-cover w-full h-full">
+          {/* <Image width={721} height={627} src={'/mobile.png'} alt="mobile" className="bg-contain" /> */}
+        </div>
       </div>
     </div>
   );
