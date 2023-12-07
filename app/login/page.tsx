@@ -5,8 +5,9 @@ import PrimaryButton from "../ui/PrimaryButton";
 import Link from "next/link";
 import InfoLine from "../ui/InfoLine";
 import Image from "next/image";
-
+import { Inter, Poppins } from "next/font/google";
 export default function Login() {
+  
   return (
     <div className="w-screen h-screen [background:linear-gradient(180deg,rgb(1.31,84.41,105.19)_0%,rgb(41,129,149)_96.88%)] flex flex-col md:flex-row">
       <div className="flex items-center justify-center bg-white bold w-full h-screen md:w-3/6">
