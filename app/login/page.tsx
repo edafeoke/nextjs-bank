@@ -5,6 +5,7 @@ import PrimaryButton from "../ui/PrimaryButton";
 import Link from "next/link";
 import InfoLine from "../ui/InfoLine";
 import Image from "next/image";
+import WhiteButton from "../ui/CustomButton";
 export default function Login() {
 
   return (
@@ -28,12 +29,13 @@ export default function Login() {
           </p>
           <p className="text-[14px] text-white weight-[500] leading-[32px]">Install Ibankcare application right now!</p>
           <div className="flex">
-            <Image width={340} height={232} src={'/appstore.png'} alt="mobile" className="w-32" />
+            <Image width={340} height={232} src={'/googleplay.jpg'} alt="mobile" className="w-32" />
             <Image width={394} height={128} src={'/appstore.png'} alt="mobile" className="w-32" />
           </div>
         </div>
-        <div className="bg-[url('/mobile.png')] bg-center bg-no-repeat bg-cover w-full h-full">
+        <div className="relative bg-[url('/mobile.png')] bg-center bg-no-repeat bg-cover w-full h-full">
           {/* <Image width={721} height={627} src={'/mobile.png'} alt="mobile" className="bg-contain" /> */}
+          <WhiteButton onClick={()=>console.log("")} textStyle="absolute bottom-0 right-0 bg-white text-[#0B677E] text-[24px]"  spanStyle="text-[#FCBA2D] text-[24px]" text="IBank" span="Care"/>
         </div>
       </div>
     </div>
