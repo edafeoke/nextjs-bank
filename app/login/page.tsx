@@ -9,8 +9,8 @@ import WhiteButton from "../ui/CustomButton";
 export default function Login() {
 
   return (
-    <div className="w-screen h-screen [background:linear-gradient(180deg,rgb(1.31,84.41,105.19)_0%,rgb(41,129,149)_96.88%)] flex flex-col md:flex-row">
-      <div className="flex items-center justify-center bg-white bold w-full h-screen md:w-3/6">
+    <div className="w-screen h-screen  flex flex-col md:flex-row">
+      <div className="flex items-center justify-center bg-white bold w-full h-screen lg:w-4/6">
         <div className="w-3/4 flex flex-col">
           <h2 className="text-[#034B5E] font-bold text-2xl my-10">Hi, Welcome Back Fellas!</h2>
           <form className="w-full">
@@ -21,7 +21,7 @@ export default function Login() {
           </form>
         </div>
       </div>
-      <div className="hidden md:flex flex-col items-center justify-center h-full py-10 pl-10 [background:linear-gradient(180deg,rgb(1.31,84.41,105.19)_0%,rgb(41,129,149)_96.88%)]">
+      <div className="hidden lg:flex flex-col items-center justify-center h-full py-5 pl-5 bg-gradient w-2/6">
         <div className="w-3/4">
           <p className="text-[36px] text-white leading-[49px]">Getting Easier
             Pay for Any Transfer<br />
