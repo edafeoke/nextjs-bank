@@ -10,12 +10,12 @@ import FormInputGroup from "../ui/FormInputGroup";
 export default function Page() {
 
   return (
-    <div className="w-screen h-screen [background:linear-gradient(180deg,rgb(1.31,84.41,105.19)_0%,rgb(41,129,149)_96.88%)] flex flex-col md:flex-row">
-      <div className="flex items-center justify-center bg-white bold w-full h-screen md:w-4/6">
-        <div className="w-3/4 h-3/4 flex flex-col">
-          <h2 className="text-[#034B5E] font-bold text-2xl my-3">Getting started</h2>
+    <div className="w-screen flex flex-row">
+      <div className="flex items-center justify-center bg-white bold w-full lg:w-4/6">
+        <div className="w-3/4 flex flex-col">
+          <h2 className="text-[#034B5E] font-bold text-2xl my-3 mt-10">Getting started</h2>
           <form className="w-full h-full">
-            <div className="h-3/4 w-full flex flex-col  overflow-y-scroll">
+            <div className="w-full flex flex-col">
               <FormInput id="fullname" required type="text" name="fullname" error="" label="Full Name" placeholder="Enter your full name" />
               <FormInput id="email" required type="email" name="email" error="" label="Email address" placeholder="Enter your email address" />
               <FormInputGroup>
@@ -37,7 +37,7 @@ export default function Page() {
           </form>
         </div>
       </div>
-      <div className="hidden md:flex flex-col items-center justify-center h-full py-10 pl-10 [background:linear-gradient(180deg,rgb(1.31,84.41,105.19)_0%,rgb(41,129,149)_96.88%)]">
+      <div className="hidden lg:flex flex-col items-center justify-center md:w-2/6 py-10 pl-10 bg-gradient fixed top-0 right-0 bottom-0">
         <div className="w-3/4">
           <p className="text-[36px] text-white leading-[49px]">Getting Easier
             Pay for Any Transfer<br />
