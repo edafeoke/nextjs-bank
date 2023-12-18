@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
 // import { Inter } from 'next/font/google'
 import { Inter, Poppins } from "next/font/google";
-import './globals.css'
-import Sidebar from './ui/Sidebar';
+import '../globals.css'
+import Sidebar from '../ui/Sidebar';
+import Navbar from '../ui/Navbar';
 
 const inter = Inter({ subsets: ['latin'] })
 const poppins = Poppins({
@@ -24,10 +25,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={poppins.className}>
-        {children}
-      </body>
-    </html>
+        <div className="flex flex-row">
+          <Sidebar/>
+          <main className='bg-[#F8F8F8] flex flex-col flex-grow'>
+          {children}
+          </main>
+        </div>
   )
 }

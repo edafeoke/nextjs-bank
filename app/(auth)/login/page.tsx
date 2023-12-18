@@ -1,11 +1,16 @@
 'use client'
 import * as React from "react";
-import FormInput from "../ui/FormInput";
-import PrimaryButton from "../ui/PrimaryButton";
+import FormInput from "@/app/ui/FormInput";
+import PrimaryButton from "@/app/ui/PrimaryButton";
 import Link from "next/link";
-import InfoLine from "../ui/InfoLine";
 import Image from "next/image";
-import WhiteButton from "../ui/CustomButton";
+import WhiteButton from "@/app/ui/CustomButton";
+import { Metadata } from "next";
+
+const metadata: Metadata = {
+  title: 'Login',
+}
+
 export default function Login() {
 
   return (
@@ -16,9 +21,15 @@ export default function Login() {
           <form className="w-full">
             <FormInput id="username" type="text" name="username" error="" label="Email or username" placeholder="Enter email address or username" />
             <FormInput id="password" label="Password" placeholder="Enter password" name="password" type="password" />
-            <Link href='#' className="text-[#edafeed]">Forgot password</Link>
-            <PrimaryButton title="Sign in" onClick={() => console.log("Christian wahala")} />
+            <Link href='#' className="block text-primary text-right">Forgot password</Link>
+            <PrimaryButton title="Sign in" onClick={() => console.log("Login")} />
           </form>
+          {/* <div className="flex flex-row items-center justify-center">
+            <div className="bg-gray-500 h-[.3px] flex flex-grow" />
+            <p className="mx-5 text-[#919499]">Or sign in with</p>
+            <div className="bg-gray-500 h-[.3px] flex flex-grow" />
+          </div> */}
+            <p className="text-center block mt-16 text-[#919499]">You don&apos;t Have an Account? <Link href='/register' className="text-primary text-right">Sign up</Link></p>
         </div>
       </div>
       <div className="hidden lg:flex flex-col items-center justify-center h-full py-5 pl-5 bg-gradient w-2/6">

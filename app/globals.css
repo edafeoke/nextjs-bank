@@ -34,3 +34,7 @@
 .bg-gradient {
   @apply [background:linear-gradient(180deg,rgb(1.31,84.41,105.19)_0%,rgb(41,129,149)_96.88%)]
 }
+
+.text-primary {
+  @apply text-[#F8AD15]
+}
